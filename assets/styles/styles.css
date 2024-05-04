@@ -7,14 +7,14 @@
 
 h2{
   font-family: 'Crimson Text', serif;
-  font-size: 3rem !important;
+  font-size: 3rem;
 }
 h3{
   font-family: 'Crimson Text', serif;
-  font-size: 2rem !important;
+  font-size: 2rem 
 }
 p,a,li{
-  font-size: 1.1rem !important;
+  font-size: 1.5rem ;
 }
  #header-jumbotron {
   background-color: #71C9CE;
@@ -39,8 +39,8 @@ header{
  nav{
   background-color:#A6E3E9;
   padding: 5px;
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: 0 !important;
  }
 .navbar-list {
   list-style-type: none;
@@ -57,12 +57,11 @@ nav a:hover {
 }
 nav ul {
   display: flex;
-  gap: 3rem;
-  padding-inline: 4rem;
+  justify-content:space-around ;
+
 }
 .flex-container{
   display: flex;
-  
 }
 #content {
   background-color: #E3FDFD;
@@ -70,6 +69,10 @@ nav ul {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem 2rem;
+}
+.pkmbk-picture{
+  align-self: center;
+  border: #71C9CE 5px solid;
 }
 #about-me{
   margin-top: 40px;
@@ -92,9 +95,13 @@ nav ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-
   article{
-    padding: 30px;
+    padding: 20px;
+  }
+  #education{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   main aside{
@@ -106,7 +113,7 @@ nav ul {
     height: 100%;
     display: flex;
   }
-  
+
   main aside .social-media ul{
     padding: 1.5rem 1rem;
     border-top-left-radius: 12px;
@@ -135,13 +142,11 @@ nav ul {
     margin-left: 0;
     padding-left: 1.5em;
   }
-  #skills,#education{
-    min-width: 35%;
-    min-height: 35vh;
-  }
+
   .vertical-line {
     border-left: 2px solid white; 
     min-height: 100px; 
+    padding: 20px;
 justify-self: center;
   }
   #projects{
@@ -149,19 +154,177 @@ justify-self: center;
     flex-direction: column;
     align-items: center;
   }
-  /* carousel */
   .carousel {
     margin: 0 auto;
     padding-bottom: 5%; 
+
   }
   
   .carousel-inner {
+    display: flex;    
+    width: 100%;
+    
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+  }
+  
+  p,
+  a,
+  li {
+    font-size: 1.5rem;
+  }
+  
+  #header-jumbotron {
+    background-color: #71c9ce;
+    font-size: 1.2rem;
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #header-jumbotron h1 {
+    color: white;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  #header-jumbotron p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  header {
+    display: inline;
+  }
+  
+  nav {
+    background-color: #a6e3e9;
+    padding: 5px;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+  }
+  
+  nav a {
+    color: #0e46a3;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+  }
+  
+  nav a:hover {
+    color: #a36b0e;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .flex-container {
     display: flex;
   }
   
+  #content {
+    background-color: #e3fdfd;
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+  
+  .pkmbk-picture {
+    align-self: center;
+    border: #71c9ce 5px solid;
+  }
+  
+  #about-me {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-picture {
+    max-height: 400px;
+    max-width: 400px;
+    border: #71c9ce 5px solid;
+    border-radius: 40px;
+  }
+  
+  #experience h2,
+  h3,
+  p {
+    padding: 5px;
+  }
+  
+  .card {
+    background-color: #71c9ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  article {
+    padding: 20px;
+  }
+  
+  #education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+  
+  main aside .social-media {
+    height: 100%;
+    display: flex;
+  }
+  
+  main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #71c9ce;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  main aside .social-media li {
+    list-style-type: none;
+  }
   .carousel-item {
     display: none;
-    transition: opacity 1s ease;
+    transition: all 1s ease;
+    max-width: 100%;
   }
   
   .carousel-item.active {
@@ -169,13 +332,14 @@ justify-self: center;
 
   }
   
-  .carousel img {
-    width: 60vw;
+  .carousel-img {
+    width: 100%;
     height: 50vh;
   }
+ 
   
   .carousel-control {
-    width: 2%;
+    width: 1%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -185,26 +349,123 @@ justify-self: center;
       display: flex;
       align-items: center; 
   }
-  
-
-  
-
-  
+    
   .carousel-control:hover {
     background-color: black;
   }
 
   footer{
     background-color: #71C9CE;
+    min-width: 675px;
     min-height: 10vh;
     text-align: center;
     color: white;
     font-weight: 500;
   }
-  
-  @media (max-width: 768px) {
+  .pkmbk-picture{
+    max-width: 45vw;
+     height: 40vh; 
+     margin-left: auto;
+     border-radius: 10px;
+  }
+  @media (max-width: 750px) {
 
-p{
-  width: 100% !important;
+.pkmbk-picture{
+  max-width: 100%;
+  height: 40%;
+  margin: 0;
 }
+
+nav ul {
+  gap: 3rem;
+  padding-inline: 4rem;
+}
+  #header-jumbotron{
+
+      min-width: 675px;
+    }
+
+nav{
+  min-width: 675px;
+}
+  p,a,li{
+
+    font-size: 0.9rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+
+#experience{
+flex-direction: column;
+}
+#experience h2{
+  text-align: center;
+}
+.web-footer{
+  display: inline-flex;
+}
+#content{
+  min-width: 675px;
+}
+}
+@media screen and (max-width: 1024px) {
+  .pkmbk-picture{
+    max-width: 100%;
+    height: 40%;
+    margin: 0;
+  }
+  #experience{
+    flex-direction: column;
+    }
+    #experience h2{
+      text-align: center;
+    }
+  .carousel-item{
+    max-width: 80%;
+  }
+  p,a,li{
+    width: 100% !important;
+  }
+}
+#about-me {
+  animation: fadeInUp 1s ease-in-out both;
+  opacity: 0; 
+}
+#experience{
+  animation: fadeLeft 2s ease-in-out both;
+  opacity: 0;
+}
+#projects{
+  animation: fadeInUp 2s ease-in-out both;
+  opacity: 0;
+
+}
+#education,#skills{
+  animation: fadeLeft 3s ease-in-out both;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
