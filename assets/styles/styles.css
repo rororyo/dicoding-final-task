@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem !important;
+}
+h3{
+  font-family: 'Crimson Text', serif;
+  font-size: 2rem !important;
+}
+p,a,li{
+  font-size: 1.1rem !important;
+}
+ #header-jumbotron {
+  background-color: #71C9CE;
+  font-size: 1.2rem;
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ #header-jumbotron h1 {
+  color: white;
+  font-family: 'Crimson Text', serif;
+ }
+ #header-jumbotron p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+} 
+header{
+  display: inline;
+}
+ nav{
+  background-color:#A6E3E9;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+ }
+.navbar-list {
+  list-style-type: none;
+}
+nav a{
+  color: #0E46A3;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400 ;
+}
+nav a:hover {
+  color: #A36B0E;
+}
+nav ul {
+  display: flex;
+  gap: 3rem;
+  padding-inline: 4rem;
+}
+.flex-container{
+  display: flex;
+  
+}
+#content {
+  background-color: #E3FDFD;
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+#about-me{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  }
+  .profile-picture{
+    max-height: 400px;
+    max-width: 400px;
+    border: #71C9CE 5px solid;
+    border-radius: 40px;
+  }
+  #experience h2,h3,p{
+  padding: 5px;
+  }
+  .card{
+    background-color: #71C9CE;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  article{
+    padding: 30px;
+  }
+
+  main aside{
+    position : fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+  main aside .social-media{
+    height: 100%;
+    display: flex;
+  }
+  
+  main aside .social-media ul{
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #71C9CE;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  main aside .social-media li {
+    list-style-type: none;
+  }
+  main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transition: all 0.1s ease-in-out;
+  }
+  main aside .social-media li a:hover {
+    color: black;
+  }
+  article ol,ul{
+    margin-left: 0;
+    padding-left: 1.5em;
+  }
+  #skills,#education{
+    min-width: 35%;
+    min-height: 35vh;
+  }
+  .vertical-line {
+    border-left: 2px solid white; 
+    min-height: 100px; 
+justify-self: center;
+  }
+  #projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* carousel */
+  .carousel {
+    margin: 0 auto;
+    padding-bottom: 5%; 
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+  .carousel-item {
+    display: none;
+    transition: opacity 1s ease;
+  }
+  
+  .carousel-item.active {
+    display: block;
+
+  }
+  
+  .carousel img {
+    width: 60vw;
+    height: 50vh;
+  }
+  
+  .carousel-control {
+    width: 2%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+      display: flex;
+      align-items: center; 
+  }
+  
+
+  
+
+  
+  .carousel-control:hover {
+    background-color: black;
+  }
+
+  footer{
+    background-color: #71C9CE;
+    min-height: 10vh;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+
+p{
+  width: 100% !important;
+}
+}

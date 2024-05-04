@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
+  <title>My portfolio</title>
+</head>
+<body>
+  <header>
+    <div id="header-jumbotron">
+      <h1>Hi There! I am Nathaniel Ryo Kurniadi</h1>
+      <p>An aspiring web developer</p>
+    </div>
+    <nav>
+      <ul class="navbar-list">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills & Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flex-container">
+    <div id="content" >
+      <article id="about-me" >
+        <h2>About Me</h2>
+        <img src="./assets/images/self-photo.jpeg" alt="self-photo" class="profile-picture">
+        <p style="width: 50%; text-align: justify;">
+          A second year informatics engineering major at Institut Teknologi Sepuluh Nopember Surabaya. I am a highly motivated individual seeking a challenging role where I can utilize my problem-solving and critical thinking skills to contribute to the success of the organization. Possess a creative mind and excel in a fast-paced, dynamic environment. Adept at teamwork and committed to delivering exceptional results. Seeking an opportunity as a backend engineer
+        </p>
+      </article>
+      <article id="experience" class="flex-container" style="gap: 5rem;">
+        <img src="./assets/images/pkmbk.jpeg" alt="pkmbk" style="max-width: 45vw; height: 40vh; margin-left: auto;border-radius: 10px;">
+        <div style="margin-left: auto; text-align: justify;">
+          <h2>Experience</h2> <br>
+          <h3>Staff Member PKMBK-Pembinaan (May 2023 - Nov 2023)</h3>
+          <p style="width: 80%;">
+            As an active contributor, I played an integral role in both the planning and execution phases of various events, demonstrating my versatility and dedication to ensuring their success. Notably, I spearheaded the coordination efforts for the KKR MABA welcome party, where I worked closely with stakeholders to create a memorable experience for attendees, ensuring every detail was meticulously planned and executed flawlessly. Additionally, my commitment to social responsibility shone through during our CSR visits to care facilities, where I organized meaningful interactions and activities, fostering connections between our team and the residents while leaving a positive impact on the community. Furthermore, my involvement in the GPS Camp showcased my ability to thrive in dynamic environments, where I facilitated team-building exercises and workshops, fostering personal and professional growth among participants.
+          </p> 
+          <h3>What I learned:</h3>
+          <ol>
+            <li>Enhanced organizational and teamwork skills. </li>
+            <li>Demonstrated commitment to Christian values and community engagement.</li>
+            <li>Gained valuable insights into event planning and leadership.</li>
+          </ol>
+        </div>
+      </article>
+      <article id="projects">
+        <h2 style="padding: 20px;">Projects</h2>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <button class="carousel-control prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i></button>
+            <div class="carousel-item active">
+              <img src="./assets/images/project-abel.png" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/project-simple-blog.png" alt="Image 2">
+            </div>
+           
+          <button class="carousel-control next" onclick="nextSlide()"><i class="fas fa-arrow-right"></i></button>
+          </div>
+          
+        </div>
+      </article>
+      <div class="flex-container "style="justify-content:space-around;  background-color:#A6E3E9;">
+        <article id="skills">
+          <h2>Skills & Certifications</h2>
+          <p style="width: 80%;margin-top: 30px;">Languages: Bahasa Indonesia (Native Speaker); English (ITS TEFL Score: 583)</p>
+          <p>Software Skills: HTML, CSS, JavaScript, MySQL, PostGreSQL, Git, Microsoft Office </p>
+          <p>Certifications & Training:</p>
+          <ol>
+            <li><a href="./assets/images/Certificate of Completion-2.png"  target="_blank">OLC Software Engineering</a>  Bootcamp (OmahTI)</li>
+            <li><a href="./assets/images/aws.pdf" target="_blank">Cloud Practioner Essentials (Dicoding)</a> </li>
+            <li><a href="./assets/images/jsbasic.pdf" target="_blank">Belajar Dasar Pemrograman JavaScript(Dicoding)</a></li>
+            <li><a href="./assets/images/sertifikat_course_261_3253163_210324192327.pdf" target="_blank">Belajar Membuat Aplikasi Back-End untuk Pemula (Dicoding)</a></li>
+          </ol>
+        </article>
+        <div class="vertical-line"></div>
+        <article id="education">
+          <h2>Education</h2>
+          <p style="margin-top: 20px;">Insitut Teknologi Sepuluh Nopember</p>
+          <div class="flex-container" style="align-items: center;">
+            <i class="fas fa-map-marker-alt" style="color: black; font-size: 1.1rem;"></i>
+            <p>Surabaya, Indonesia</p>
+          </div>
+          
+          <p>Bachelor of Informatics Engineering</p>
+          <ul>
+            <li>GPA: 3.74/4.00 (57 Credits)</li>
+            <li>Relevant Coursework:
+              <ol>
+                <li>Programming Basic</li>
+                <li>Data Structure</li>
+                <li>Database system</li>
+                <li>Web Programming</li>
+                <li>Operating System</li>
+              </ol>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <aside>
+      <div class="social-media">
+        <ul>
+          <li>
+            <a href="https://github.com/rororyo" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nathaniel-ryo-56b66828b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/nathanielryo9/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <footer class="card flex-container" style="align-items: center; justify-content: center;">
+    <p >Copyright &copy; <script>document.write(new Date().getFullYear())</script> - Nathaniel Ryo Kurniadi</p>
+  </footer >
+
+  <script src="./script.js"></script>
+</body>
+</html>
