@@ -113,7 +113,14 @@ nav ul {
     height: 100%;
     display: flex;
   }
+  main aside .social-media img{
+    height: 100%;
+    width: 20px;
+  }  
 
+  .github-icon:hover {
+    content: url('../images/github-mark.png'); 
+  }
   main aside .social-media ul{
     padding: 1.5rem 1rem;
     border-top-left-radius: 12px;
